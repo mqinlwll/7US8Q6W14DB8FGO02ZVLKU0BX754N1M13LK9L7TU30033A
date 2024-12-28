@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan Palace</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Caravan Palace</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Black_Betty/index.html">Black Betty</a>
+        </div>
+        
+        <div class="card">
+            <a href="Reverse__IAMNOBODI_Remix_/index.html">Reverse (IAMNOBODI Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Chronologic/index.html">Chronologic</a>
+        </div>
+        
+        <div class="card">
+            <a href="Miracle__Boogie_Belgique_Remix_/index.html">Miracle (Boogie Belgique Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Supersonics__Out_Come_the_Freaks_Edit_/index.html">Supersonics (Out Come the Freaks Edit)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Wonderland_-_Single/index.html">Wonderland - Single</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gangbusters_Melody_Club/index.html">Gangbusters Melody Club</a>
+        </div>
+        
+        <div class="card">
+            <a href="Reverse/index.html">Reverse</a>
+        </div>
+        
+        <div class="card">
+            <a href="Mirrors/index.html">Mirrors</a>
+        </div>
+        
+        <div class="card">
+            <a href="About_You__feat__Charles_X_/index.html">About You (feat. Charles X)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Plume/index.html">Plume</a>
+        </div>
+        
+        <div class="card">
+            <a href="Moonshine__Remix_EP_/index.html">Moonshine (Remix EP)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Clash_-_EP/index.html">Clash - EP</a>
+        </div>
+        
+        <div class="card">
+            <a href="Moonshine__Bakermat_Remix_/index.html">Moonshine (Bakermat Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Avalanches__DARGZ_Remix_/index.html">Avalanches (DARGZ Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Supersonics/index.html">Supersonics</a>
+        </div>
+        
+        <div class="card">
+            <a href="Miracle/index.html">Miracle</a>
+        </div>
+        
+        <div class="card">
+            <a href="MAD/index.html">MAD</a>
+        </div>
+        
+        <div class="card">
+            <a href="_I___I_/index.html"><I°_°I></a>
+        </div>
+        
+        <div class="card">
+            <a href="Raccoons__Gaudi___Don_Letts_Remix_/index.html">Raccoons (Gaudi & Don Letts Remix)</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

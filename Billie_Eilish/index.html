@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billie Eilish</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Billie Eilish</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Bellyache/index.html">Bellyache</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ocean_Eyes/index.html">Ocean Eyes</a>
+        </div>
+        
+        <div class="card">
+            <a href="What_Was_I_Made_For___From_The_Motion_Picture__Barbie__/index.html">What Was I Made For? [From The Motion Picture "Barbie"]</a>
+        </div>
+        
+        <div class="card">
+            <a href="ilomilo__Live_From_The_Film_-_Billie_Eilish__The_World_s_A_Little_Blurry_/index.html">ilomilo (Live From The Film - Billie Eilish: The World’s A Little Blurry)</a>
+        </div>
+        
+        <div class="card">
+            <a href="dont_smile_at_me/index.html">dont smile at me</a>
+        </div>
+        
+        <div class="card">
+            <a href="Lo_Vas_A_Olvidar/index.html">Lo Vas A Olvidar</a>
+        </div>
+        
+        <div class="card">
+            <a href="HIT_ME_HARD_AND_SOFT/index.html">HIT ME HARD AND SOFT</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bellyache__Marian_Hill_Remix_/index.html">Bellyache (Marian Hill Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="my_future/index.html">my future</a>
+        </div>
+        
+        <div class="card">
+            <a href="come_out_and_play/index.html">come out and play</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ocean_Eyes__The_Remixes_/index.html">Ocean Eyes (The Remixes)</a>
+        </div>
+        
+        <div class="card">
+            <a href="MyBoi__TroyBoi_Remix_/index.html">MyBoi (TroyBoi Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="No_Time_To_Die/index.html">No Time To Die</a>
+        </div>
+        
+        <div class="card">
+            <a href="bad_guy__with_Justin_Bieber_/index.html">bad guy (with Justin Bieber)</a>
+        </div>
+        
+        <div class="card">
+            <a href="L_AMOUR_DE_MA_VIE__OVER_NOW_EXTENDED_EDIT_/index.html">L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]</a>
+        </div>
+        
+        <div class="card">
+            <a href="WHEN_I_WAS_OLDER__Music_Inspired_By_The_Film_ROMA_/index.html">WHEN I WAS OLDER (Music Inspired By The Film ROMA)</a>
+        </div>
+        
+        <div class="card">
+            <a href="everything_i_wanted/index.html">everything i wanted</a>
+        </div>
+        
+        <div class="card">
+            <a href="Happier_Than_Ever/index.html">Happier Than Ever</a>
+        </div>
+        
+        <div class="card">
+            <a href="WHEN_WE_ALL_FALL_ASLEEP__WHERE_DO_WE_GO_/index.html">WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</a>
+        </div>
+        
+        <div class="card">
+            <a href="_burn/index.html">&burn</a>
+        </div>
+        
+        <div class="card">
+            <a href="lovely/index.html">lovely</a>
+        </div>
+        
+        <div class="card">
+            <a href="Therefore_I_Am/index.html">Therefore I Am</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bored/index.html">Bored</a>
+        </div>
+        
+        <div class="card">
+            <a href="COPYCAT__Sofi_Tukker_Remix_/index.html">COPYCAT (Sofi Tukker Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Six_Feet_Under/index.html">Six Feet Under</a>
+        </div>
+        
+        <div class="card">
+            <a href="hotline__edit_/index.html">hotline (edit)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Guitar_Songs/index.html">Guitar Songs</a>
+        </div>
+        
+        <div class="card">
+            <a href="Happier_Than_Ever__Edit_/index.html">Happier Than Ever (Edit)</a>
+        </div>
+        
+        <div class="card">
+            <a href="bitches_broken_hearts/index.html">bitches broken hearts</a>
+        </div>
+        
+        <div class="card">
+            <a href="Six_Feet_Under__The_Remixes_/index.html">Six Feet Under (The Remixes)</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

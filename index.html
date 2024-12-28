@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Artists</h1>
+    <div class="grid"><div class="card"><a href="PINOCCHIOP/index.html">PINOCCHIOP</a></div>
+<div class="card"><a href="Jhariah/index.html">Jhariah</a></div>
+<div class="card"><a href="Crusher-P/index.html">Crusher-P</a></div>
+<div class="card"><a href="DECO_27__PinocchioP/index.html">DECO*27, PinocchioP</a></div>
+<div class="card"><a href="Miracle_Musical/index.html">Miracle Musical</a></div>
+<div class="card"><a href="K_Flay/index.html">K.Flay</a></div>
+<div class="card"><a href="Pinkshift/index.html">Pinkshift</a></div>
+<div class="card"><a href="Alohaii/index.html">Alohaii</a></div>
+<div class="card"><a href="BRKN_LOVE/index.html">BRKN LOVE</a></div>
+<div class="card"><a href="The_Oozes/index.html">The Oozes</a></div>
+<div class="card"><a href="isonosuke/index.html">isonosuke</a></div>
+<div class="card"><a href="Azari/index.html">Azari</a></div>
+<div class="card"><a href="Black_Sabbath/index.html">Black Sabbath</a></div>
+
+        
+        <div class="card">
+            <a href="Crystal_Castles/index.html">Crystal Castles</a>
+        </div>
+        
+        <div class="card">
+            <a href="Crawlers/index.html">Crawlers</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ado/index.html">Ado</a>
+        </div>
+        
+        <div class="card">
+            <a href="Billie_Eilish/index.html">Billie Eilish</a>
+        </div>
+        
+        <div class="card">
+            <a href="Siinamota/index.html">Siinamota</a>
+        </div>
+        
+        <div class="card">
+            <a href="b_a/index.html">bôa</a>
+        </div>
+        
+        <div class="card">
+            <a href="JubyPhonic/index.html">JubyPhonic</a>
+        </div>
+        
+        <div class="card">
+            <a href="Zenpaku/index.html">Zenpaku</a>
+        </div>
+        
+        <div class="card">
+            <a href="Caravan_Palace/index.html">Caravan Palace</a>
+        </div>
+        
+        <div class="card">
+            <a href="Cheese_People/index.html">Cheese People</a>
+        </div>
+        
+       
+    <!Add card artist>
+
+    </div>
+
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

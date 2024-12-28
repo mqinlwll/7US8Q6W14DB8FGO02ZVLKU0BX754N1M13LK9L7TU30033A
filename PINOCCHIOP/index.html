@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINOCCHIOP</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>PINOCCHIOP</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="SHI-BOU/index.html">SHI-BOU</a>
+        </div>
+        
+        <div class="card">
+            <a href="Comic_and_Cosmic/index.html">Comic and Cosmic</a>
+        </div>
+        
+        <div class="card">
+            <a href="Fake_meme/index.html">Fake meme</a>
+        </div>
+        
+        <div class="card">
+            <a href="God-ish/index.html">God-ish</a>
+        </div>
+        
+        <div class="card">
+            <a href="PinocchioP_Best_Album_2009-2020_Kotobuki/index.html">PinocchioP Best Album 2009-2020 Kotobuki</a>
+        </div>
+        
+        <div class="card">
+            <a href="Isn_t_it__A___feat__HATSUNE_MIKU___KAGAMINE_RIN_/index.html">Isn't it "A" (feat. HATSUNE MIKU & KAGAMINE RIN)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Apocalypse_Now/index.html">Apocalypse Now</a>
+        </div>
+        
+        <div class="card">
+            <a href="ZERO-GO/index.html">ZERO-GO</a>
+        </div>
+        
+        <div class="card">
+            <a href="Love_of_Love_by_Love_for_Love/index.html">Love of Love by Love for Love</a>
+        </div>
+        
+        <div class="card">
+            <a href="UTuber/index.html">UTuber</a>
+        </div>
+        
+        <div class="card">
+            <a href="Cosmospice/index.html">Cosmospice</a>
+        </div>
+        
+        <div class="card">
+            <a href="PinocchioP_Live_from_Gozou-Roppu_Tour_2019_at_Tokyo/index.html">PinocchioP Live from Gozou-Roppu Tour 2019 at Tokyo</a>
+        </div>
+        
+        <div class="card">
+            <a href="Killer_Spider/index.html">Killer Spider</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ultimate_Senpai/index.html">Ultimate Senpai</a>
+        </div>
+        
+        <div class="card">
+            <a href="Loveit/index.html">Loveit</a>
+        </div>
+        
+        <div class="card">
+            <a href="META/index.html">META</a>
+        </div>
+        
+        <div class="card">
+            <a href="Antenna/index.html">Antenna</a>
+        </div>
+        
+        <div class="card">
+            <a href="Anonymous_M__feat__HATSUNE_MIKU___ARuFa_/index.html">Anonymous M (feat. HATSUNE MIKU & ARuFa)</a>
+        </div>
+        
+        <div class="card">
+            <a href="KICK-ASS__LITERALLY/index.html">KICK-ASS *LITERALLY</a>
+        </div>
+        
+        <div class="card">
+            <a href="Because_You_re_Here__feat__Miku_Hatsune_/index.html">Because You're Here (feat. Miku Hatsune)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Reincarnation_Apple/index.html">Reincarnation Apple</a>
+        </div>
+        
+        <div class="card">
+            <a href="LOVE/index.html">LOVE</a>
+        </div>
+        
+        <div class="card">
+            <a href="Magical_Girl_and_Chocolate/index.html">Magical Girl and Chocolate</a>
+        </div>
+        
+        <div class="card">
+            <a href="2_30_Life_Remaining/index.html">2:30 Life Remaining</a>
+        </div>
+        
+        <div class="card">
+            <a href="Obscure_Questions/index.html">Obscure Questions</a>
+        </div>
+        
+        <div class="card">
+            <a href="Secret_HIMITSU/index.html">Secret HIMITSU</a>
+        </div>
+        
+        <div class="card">
+            <a href="Non-breath_oblige/index.html">Non-breath oblige</a>
+        </div>
+        
+        <div class="card">
+            <a href="P_/index.html">P+</a>
+        </div>
+        
+        <div class="card">
+            <a href="HUMAN/index.html">HUMAN</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

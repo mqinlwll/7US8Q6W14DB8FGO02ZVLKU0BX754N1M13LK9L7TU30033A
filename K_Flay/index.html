@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.Flay</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>K.Flay</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="KULT_Records_Presents__Little_Bit_Crazy/index.html">KULT Records Presents: Little Bit Crazy</a>
+        </div>
+        
+        <div class="card">
+            <a href="Weirdo/index.html">Weirdo</a>
+        </div>
+        
+        <div class="card">
+            <a href="High_Enough__RAC_Remix_/index.html">High Enough (RAC Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Shy/index.html">Shy</a>
+        </div>
+        
+        <div class="card">
+            <a href="Irish_Goodbye__feat__Vic_Fuentes_of_Pierce_The_Veil_/index.html">Irish Goodbye (feat. Vic Fuentes of Pierce The Veil)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nothing_Can_Kill_Us/index.html">Nothing Can Kill Us</a>
+        </div>
+        
+        <div class="card">
+            <a href="Inside_Voices/index.html">Inside Voices</a>
+        </div>
+        
+        <div class="card">
+            <a href="MONO/index.html">MONO</a>
+        </div>
+        
+        <div class="card">
+            <a href="It_s_Been_So_Long__pluko_Remix_/index.html">It's Been So Long (pluko Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Run_For_Your_Life__From_The_Original_Motion_Picture__Tomb_Raider__/index.html">Run For Your Life (From The Original Motion Picture “Tomb Raider”)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Can_t_Sleep__Vanic_Remix_/index.html">Can't Sleep (Vanic Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="T-Rex__from_the_Netflix_Film__Nimona__/index.html">T-Rex (from the Netflix Film "Nimona")</a>
+        </div>
+        
+        <div class="card">
+            <a href="K_Flay_on_Audiotree_Live/index.html">K.Flay on Audiotree Live</a>
+        </div>
+        
+        <div class="card">
+            <a href="FML/index.html">FML</a>
+        </div>
+        
+        <div class="card">
+            <a href="Four_Letter_Words/index.html">Four Letter Words</a>
+        </div>
+        
+        <div class="card">
+            <a href="Punisher___Carsick__softer_version_/index.html">Punisher / Carsick (softer version)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Giver__Sir_Sly_Remix_/index.html">Giver (Sir Sly Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Dating_My_Dad__feat__Travis_Barker_/index.html">Dating My Dad (feat. Travis Barker)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Raw_Raw/index.html">Raw Raw</a>
+        </div>
+        
+        <div class="card">
+            <a href="Outside_Voices/index.html">Outside Voices</a>
+        </div>
+        
+        <div class="card">
+            <a href="What_If_It_Is/index.html">What If It Is</a>
+        </div>
+        
+        <div class="card">
+            <a href="Every_Where_Is_Some_Where__Deluxe_/index.html">Every Where Is Some Where (Deluxe)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Seattle_Sessions/index.html">Seattle Sessions</a>
+        </div>
+        
+        <div class="card">
+            <a href="TGIF__feat__Tom_Morello_/index.html">TGIF (feat. Tom Morello)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Life_as_a_Dog/index.html">Life as a Dog</a>
+        </div>
+        
+        <div class="card">
+            <a href="Giver__Wankelmut___Fynn_Remix_/index.html">Giver (Wankelmut & Fynn Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Every_Where_Is_Some_Where__Deluxe_Version_/index.html">Every Where Is Some Where (Deluxe Version)</a>
+        </div>
+        
+        <div class="card">
+            <a href="It_s_Been_So_Long/index.html">It's Been So Long</a>
+        </div>
+        
+        <div class="card">
+            <a href="Every_Where_Is_Some_Where/index.html">Every Where Is Some Where</a>
+        </div>
+        
+        <div class="card">
+            <a href="Solutions/index.html">Solutions</a>
+        </div>
+        
+        <div class="card">
+            <a href="Perfectly_Alone___Bar_Soap__softer_version_/index.html">Perfectly Alone / Bar Soap (softer version)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Blood_In_The_Cut__Remixed_/index.html">Blood In The Cut (Remixed)</a>
+        </div>
+        
+        <div class="card">
+            <a href="K_Flay/index.html">K.Flay</a>
+        </div>
+        
+        <div class="card">
+            <a href="Inside_Voices___Outside_Voices/index.html">Inside Voices / Outside Voices</a>
+        </div>
+        
+        <div class="card">
+            <a href="Carsick/index.html">Carsick</a>
+        </div>
+        
+        <div class="card">
+            <a href="Life_as_a_Dog__Deluxe_Version_/index.html">Life as a Dog (Deluxe Version)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Don_t_Judge_A_Song_By_Its_Cover/index.html">Don't Judge A Song By Its Cover</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

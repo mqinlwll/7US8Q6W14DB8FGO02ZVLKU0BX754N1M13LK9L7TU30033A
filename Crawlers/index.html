@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawlers</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Crawlers</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Fuck_Me__I_Didn_t_Know_How_To_Say_/index.html">Fuck Me (I Didn’t Know How To Say)</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_Didn_t_Know_How_To_Say/index.html">I Didn’t Know How To Say</a>
+        </div>
+        
+        <div class="card">
+            <a href="Messiah__Acoustic_/index.html">Messiah (Acoustic)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Come_Over__Again___Live_Acoustic_/index.html">Come Over (Again) (Live Acoustic)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Loud_Without_Noise/index.html">Loud Without Noise</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_Don_t_Want_It/index.html">I Don't Want It</a>
+        </div>
+        
+        <div class="card">
+            <a href="That_Time_Of_Year_Always/index.html">That Time Of Year Always</a>
+        </div>
+        
+        <div class="card">
+            <a href="Call_It_Love/index.html">Call It Love</a>
+        </div>
+        
+        <div class="card">
+            <a href="Would_You_Come_To_My_Funeral/index.html">Would You Come To My Funeral</a>
+        </div>
+        
+        <div class="card">
+            <a href="Hush/index.html">Hush</a>
+        </div>
+        
+        <div class="card">
+            <a href="Loud___With_Noise__Live_From_EartH__London_/index.html">Loud & With Noise (Live From EartH, London)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Messiah/index.html">Messiah</a>
+        </div>
+        
+        <div class="card">
+            <a href="MONROE/index.html">MONROE</a>
+        </div>
+        
+        <div class="card">
+            <a href="Breathe/index.html">Breathe</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Mess_We_Seem_To_Make__Deluxe_/index.html">The Mess We Seem To Make (Deluxe)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kills_Me_To_Be_Kind/index.html">Kills Me To Be Kind</a>
+        </div>
+        
+        <div class="card">
+            <a href="Crawlers_-_EP/index.html">Crawlers - EP</a>
+        </div>
+        
+        <div class="card">
+            <a href="Golden_Bridge/index.html">Golden Bridge</a>
+        </div>
+        
+        <div class="card">
+            <a href="Placebo/index.html">Placebo</a>
+        </div>
+        
+        <div class="card">
+            <a href="Hang_Me_Like_Jesus/index.html">Hang Me Like Jesus</a>
+        </div>
+        
+        <div class="card">
+            <a href="Too_Soon/index.html">Too Soon</a>
+        </div>
+        
+        <div class="card">
+            <a href="So_Tired/index.html">So Tired</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_Can_t_Drive/index.html">I Can't Drive</a>
+        </div>
+        
+        <div class="card">
+            <a href="Statues/index.html">Statues</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

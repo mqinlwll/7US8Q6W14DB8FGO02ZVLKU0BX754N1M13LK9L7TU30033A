@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PinocchioP Live from Gozou-Roppu Tour 2019 at Tokyo - PINOCCHIOP</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>PinocchioP Live from Gozou-Roppu Tour 2019 at Tokyo - PINOCCHIOP</h1>
+    <div class="track-list">
+        <p>Total Tracks: 26</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Nothing Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Nothing_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">What's Inside Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="What_s_Inside_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">YOZURINA Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="YOZURINA_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Tonchinkan Feast Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Tonchinkan_Feast_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Nice To Meet You, Mr. Earthling Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Nice_To_Meet_You__Mr__Earthling_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Everything About Animals Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Everything_About_Animals_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">(Rotten) Apple dot com Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="_Rotten__Apple_dot_com_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Zero Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Zero_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Whatever Yama Says Goes Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Whatever_Yama_Says_Goes_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Antenna Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Antenna_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Mushroom Mother Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Mushroom_Mother_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Nobody Makes Sense Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Nobody_Makes_Sense_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Beautiful Fiction Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Beautiful_Fiction_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Kusare-gedou and Chocolate Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Kusare-gedou_and_Chocolate_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">At the Mercy of Emptiness Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="At_the_Mercy_of_Emptiness_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Mei Mei Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Mei_Mei_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Ghosts Play to the Audience Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Ghosts_Play_to_the_Audience_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">The Dawn of Japan Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="The_Dawn_of_Japan_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Thanks for being Lifeless Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Thanks_for_being_Lifeless_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">I.Q Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="I_Q_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Motivation is Dead Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Motivation_is_Dead_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Common World Domination Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Common_World_Domination_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">GOZOU-ROPPU -Opening- Live from Gozou-Roppu Tour 2019 at Tokyo</span>
+                    <a href="GOZOU-ROPPU_-Opening-_Live_from_Gozou-Roppu_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">Deracine Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="Deracine_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">All I Need are Things I Like Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="All_I_Need_are_Things_I_Like_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">SLoWMoTIoN Live from GOZOU-ROPPU Tour 2019 at Tokyo</span>
+                    <a href="SLoWMoTIoN_Live_from_GOZOU-ROPPU_Tour_2019_at_Tokyo.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

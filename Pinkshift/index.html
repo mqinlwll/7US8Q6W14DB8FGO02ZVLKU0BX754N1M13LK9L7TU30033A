@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinkshift</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Pinkshift</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="in_a_breath/index.html">in a breath</a>
+        </div>
+        
+        <div class="card">
+            <a href="nothing__in_my_head_/index.html">nothing (in my head)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Knead/index.html">Knead</a>
+        </div>
+        
+        <div class="card">
+            <a href="On_Thin_Ice/index.html">On Thin Ice</a>
+        </div>
+        
+        <div class="card">
+            <a href="GET_OUT/index.html">GET OUT</a>
+        </div>
+        
+        <div class="card">
+            <a href="i_m_not_crying_you_re_crying/index.html">i'm not crying you're crying</a>
+        </div>
+        
+        <div class="card">
+            <a href="to_me/index.html">to me</a>
+        </div>
+        
+        <div class="card">
+            <a href="suraksha/index.html">suraksha</a>
+        </div>
+        
+        <div class="card">
+            <a href="i_m_gonna_tell_my_therapist_on_you/index.html">i'm gonna tell my therapist on you</a>
+        </div>
+        
+        <div class="card">
+            <a href="home/index.html">home</a>
+        </div>
+        
+        <div class="card">
+            <a href="Saccharine/index.html">Saccharine</a>
+        </div>
+        
+        <div class="card">
+            <a href="Love_Me_Forever/index.html">Love Me Forever</a>
+        </div>
+        
+        <div class="card">
+            <a href="ONE_NATION/index.html">ONE NATION</a>
+        </div>
+        
+        <div class="card">
+            <a href="Rainwalk/index.html">Rainwalk</a>
+        </div>
+        
+        <div class="card">
+            <a href="love_me_for_the_summer/index.html">love me for the summer</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

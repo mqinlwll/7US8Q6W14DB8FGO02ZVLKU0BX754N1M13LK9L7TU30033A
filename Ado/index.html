@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ado</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Ado</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Shoka/index.html">Shoka</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kura_Kura/index.html">Kura Kura</a>
+        </div>
+        
+        <div class="card">
+            <a href="Chocolat_Cadabra/index.html">Chocolat Cadabra</a>
+        </div>
+        
+        <div class="card">
+            <a href="Sakura_Biyori_and_Time_Machine_with_Hatsune_Miku___Shoka/index.html">Sakura Biyori and Time Machine with Hatsune Miku / Shoka</a>
+        </div>
+        
+        <div class="card">
+            <a href="RuLe/index.html">RuLe</a>
+        </div>
+        
+        <div class="card">
+            <a href="missing/index.html">missing</a>
+        </div>
+        
+        <div class="card">
+            <a href="unravel/index.html">unravel</a>
+        </div>
+        
+        <div class="card">
+            <a href="Odo__Bon-Odo_Remix_/index.html">Odo (Bon-Odo Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ibara/index.html">Ibara</a>
+        </div>
+        
+        <div class="card">
+            <a href="Eien_No_Akuruhi/index.html">Eien No Akuruhi</a>
+        </div>
+        
+        <div class="card">
+            <a href="Readymade/index.html">Readymade</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_m_a_Controversy/index.html">I’m a Controversy</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kitto_Coaster/index.html">Kitto Coaster</a>
+        </div>
+        
+        <div class="card">
+            <a href="Aitakute/index.html">Aitakute</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_m_invincible__UTA_from_ONE_PIECE_FILM_RED_/index.html">I’m invincible (UTA from ONE PIECE FILM RED)</a>
+        </div>
+        
+        <div class="card">
+            <a href="MIRROR/index.html">MIRROR</a>
+        </div>
+        
+        <div class="card">
+            <a href="Zanmu/index.html">Zanmu</a>
+        </div>
+        
+        <div class="card">
+            <a href="Rebellion/index.html">Rebellion</a>
+        </div>
+        
+        <div class="card">
+            <a href="New_Genesis__UTA_from_ONE_PIECE_FILM_RED_/index.html">New Genesis (UTA from ONE PIECE FILM RED)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Fleeting_Lullaby/index.html">Fleeting Lullaby</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ashura-chan/index.html">Ashura-chan</a>
+        </div>
+        
+        <div class="card">
+            <a href="Senbonzakura/index.html">Senbonzakura</a>
+        </div>
+        
+        <div class="card">
+            <a href="UTA_S_SONGS_ONE_PIECE_FILM_RED/index.html">UTA'S SONGS ONE PIECE FILM RED</a>
+        </div>
+        
+        <div class="card">
+            <a href="DIGNITY/index.html">DIGNITY</a>
+        </div>
+        
+        <div class="card">
+            <a href="Usseewa__Giga_Remix_/index.html">Usseewa (Giga Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Odo/index.html">Odo</a>
+        </div>
+        
+        <div class="card">
+            <a href="Show_LP/index.html">Show LP</a>
+        </div>
+        
+        <div class="card">
+            <a href="Buriki_No_Dance/index.html">Buriki No Dance</a>
+        </div>
+        
+        <div class="card">
+            <a href="Backlight__UTA_from_ONE_PIECE_FILM_RED_/index.html">Backlight (UTA from ONE PIECE FILM RED)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ado__Ready_For_My_Show_Playlist_/index.html">Ado "Ready For My Show Playlist"</a>
+        </div>
+        
+        <div class="card">
+            <a href="Yoru_No_Pierrot__TeddyLoid_Remix_/index.html">Yoru No Pierrot (TeddyLoid Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Show__Jax_Jones_Remix_/index.html">Show (Jax Jones Remix)</a>
+        </div>
+        
+        <div class="card">
+            <a href="All_Night_Radio/index.html">All Night Radio</a>
+        </div>
+        
+        <div class="card">
+            <a href="Himawari/index.html">Himawari</a>
+        </div>
+        
+        <div class="card">
+            <a href="Aitakute__Piano___Strings_Version_/index.html">Aitakute (Piano & Strings Version)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gira_Gira/index.html">Gira Gira</a>
+        </div>
+        
+        <div class="card">
+            <a href="Value/index.html">Value</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ado_s_Utattemita_Album/index.html">Ado's Utattemita Album</a>
+        </div>
+        
+        <div class="card">
+            <a href="Show/index.html">Show</a>
+        </div>
+        
+        <div class="card">
+            <a href="Usseewa/index.html">Usseewa</a>
+        </div>
+        
+        <div class="card">
+            <a href="Yoru_No_Pierrot/index.html">Yoru No Pierrot</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kyougen/index.html">Kyougen</a>
+        </div>
+        
+    </div>
+    <script>
+        function toggleStyle() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
